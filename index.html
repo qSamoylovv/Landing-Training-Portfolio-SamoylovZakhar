@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Самойлов Захар - Training Portfolio</title>
+</head>
+
+<body>
+    <header class="header pages-wrap" id="header">
+        <nav class="menu">
+            <button class="menu__toggle">
+                <span class="toggle__line"></span>
+                <span class="toggle__line"></span>
+                <span class="toggle__line"></span>
+            </button>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#header" class="links">Домой</a></li>
+                <li class="menu__item"><a href="#about" class="links">Обо мне</a></li>
+                <li class="menu__item"><a href="#skills" class="links">Навыки</a></li>
+                <li class="menu__item"><a href="#portfolio" class="links">Портфолио</a></li>
+                <li class="menu__item"><a href="#contacts" class="links">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1 class="content__title">Захар Самойлов</h1>
+            <div class="content__desc">
+                <p class="desc__item text-color">Frontend-разработчик</p>
+                <p class="desc__item">19 years old, Москва</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="about pages-wrap" id="about">
+        <h2 class="section-title">Обо мне</h2>
+        <div class="section-desc">
+            <p class="section-desc__item">
+                Привет, я Захар - <span class="text-color">Frontend-разработчик</span> из Москвы. Меня интересует
+                веб-разработка и все, что
+                с ней связано!
+            </p>
+            <p class="section-desc__item">
+                Я учусь в онлайн-университете <span class="text-color">"Нетология"</span> на курсе
+                "Frontend-разработчик".
+            </p>
+            <p class="section-desc__item">
+                Готов реализовывать отличные проекты с замечательными людьми.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills pages-wrap" id="skills">
+        <h2 class="section-title">Навыки</h2>
+        <div class="section-desc">
+            <p class="section-desc__item">Иструменты, с которыми я работаю:</p>
+        </div>
+        <div class="section-row">
+            <div class="skills-item">
+                <img src="svg/html5.svg" alt="html5" class="skills-item__img">
+                <span class="skills-item__desc">HTML5</span>
+            </div>
+            <div class="skills-item">
+                <img src="svg/css.svg" alt="css3" class="skills-item__img">
+                <span class="skills-item__desc">CSS3</span>
+            </div>
+            <div class="skills-item">
+                <img src="svg/js.svg" alt="js" class="skills-item__img">
+                <span class="skills-item__desc">JavaScript</span>
+            </div>
+            <div class="skills-item">
+                <img src="svg/react.svg" alt="react" class="skills-item__img">
+                <span class="skills-item__desc">React</span>
+            </div>
+            <div class="skills-item">
+                <img src="svg/algorithm.svg" alt="dom" class="skills-item__img">
+                <span class="skills-item__desc">DOM</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio pages-wrap" id="portfolio">
+        <h2 class="section-title">Портфолио</h2>
+        <div class="section-desc">
+            <p class="section-desc__item">Чтобы <span class="text-color">ознакомиться</span> с моим
+                портфолио, прошу перейти Вас на <span class="text-color">мой GitHub</span></p>
+        </div>
+        <div class="section-content">
+            <a href="https://github.com/qSamoylovv" target="_blank" class="links"><img
+                    src="images/GitHub_Logo_White.png" alt="github" class="portfolio-img"></a>
+            <span class="portfolio-img__desc">Кликай на меня :D</span>
+        </div>
+    </section>
+
+    <section class="contacts pages-wrap" id="contacts">
+        <h2 class="section-title">Контакты</h2>
+        <div class="section-desc">
+            <p class="section-desc__item">Остались вопросы?</p>
+            <p class="section-desc__item"><span class="text-color">Напишите</span> мне!</p>
+        </div>
+        <div class="section-content">
+            <button class="buttons">Написать</button>
+            <address class="social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="#0" class="social-link social__item-vkontakte"><span
+                                class="visually-hidden">VK</span></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#0" class="social-link social__item-instagram"><span
+                                class="visually-hidden">Instagram</span></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#0" class="social-link social__item-github"><span
+                                class="visually-hidden">GitHub</span></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#0" class="social-link social__item-behance"><span
+                                class="visually-hidden">Behance</span></a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+    </section>
+
+    <footer class="footer pages-wrap">
+        <div class="section-content">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+                class="links">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"
+                class="links">www.flaticon.com</a></div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

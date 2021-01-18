@@ -1,0 +1,413 @@
+body {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: #000;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  display: none;
+}
+
+.links {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background-image: url(../images/my-photo.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  height: 100vh;
+}
+
+.header::before {
+  content: "";
+  background-color: rgb(15, 15, 15);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.75;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  background-image: url("../svg/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+}
+
+.pages-wrap {
+  position: relative;
+  padding: 75px 30px;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu__toggle {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.toggle__line {
+  display: block;
+  margin-bottom: 5px;
+  width: 33px;
+  height: 4px;
+  background-color: #fff;
+}
+
+.toggle__line:last-child {
+  margin-bottom: 0;
+}
+
+.menu__list {
+  display: none;
+}
+
+.content {
+  margin-top: 20vh;
+  position: relative;
+  z-index: 1;
+}
+
+.menu,
+.content,
+.section-row,
+.section-content {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content__title {
+  margin-top: 0;
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 58px;
+  margin-bottom: 25px;
+}
+
+.content__desc {
+  margin-bottom: 37px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.desc__item {
+  margin: 0;
+}
+
+.header-img {
+  max-width: 100%;
+  padding-bottom: 70px;
+}
+
+.about {
+  color: #fff;
+  background-color: rgb(15, 15, 15);
+}
+
+.section-title {
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.section-desc {
+  margin-bottom: 50px;
+}
+
+.section-desc__item {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.text-color {
+  color: #AC3CD4;
+}
+
+.skills-item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-bottom: 35px;
+  color: #000;
+}
+
+.skills-item:hover {
+  box-shadow: 0 5px 15px rgb(15, 15, 15, 0.25);
+}
+
+.skills-item:last-child {
+  margin-bottom: 0;
+}
+
+.skills-item__desc {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.skills-item__img {
+  width: 40%;
+}
+
+.portfolio {
+  background-color: rgb(15, 15, 15);
+  color: #fff;
+}
+
+.portfolio-img {
+  max-width: 75%;
+}
+
+.section-content {
+  text-align: center;
+}
+
+.portfolio-img__desc {
+  display: block;
+}
+
+.buttons {
+  border: 0;
+  background-color: #2f1638;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  line-height: 45px;
+  flex-grow: 1;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  box-shadow: 0 5px 15px rgb(15, 15, 15, 0.25);
+}
+
+.social {
+  margin-top: 60px;
+}
+
+.social__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+.social__item-vkontakte {
+  background-image: url(../svg/020-vk.svg);
+}
+
+.social__item-instagram {
+  background-image: url(../svg/025-instagram.svg);
+}
+
+.social__item-github {
+  background-image: url(../svg/038-github.svg);
+}
+
+.social__item-behance {
+  background-image: url(../svg/048-behance.svg);
+}
+
+.footer {
+  background-color: rgb(15, 15, 15);
+  color: #fff;
+
+}
+
+/* Экстрамалые девайсы («телефоны», < 576px) */
+/* Нет @media, т.к. это по умолчанию в Bootstrap */
+
+/* Малые девайсы («ландшафтные телефоны», >= 576px) */
+@media (min-width: 576px) {
+  @media (orientation: landscape) {
+    .section-row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .skills-item {
+      width: 50%;
+    }
+
+    .skills-item__img {
+      max-width: 40%;
+    }
+
+    .portfolio-img,
+    .buttons {
+      width: 50%;
+    }
+  }
+
+  .portfolio-img {
+    width: 50%;
+  }
+}
+
+/* Средние девайсы («таблетки», >= 768px) */
+@media (min-width: 768px) {
+  .section-desc {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skills-item {
+    width: 50%;
+  }
+
+  .section-desc__item {
+    line-height: 32px;
+  }
+
+  .portfolio-img,
+  .buttons,
+  .social {
+    max-width: 50%;
+  }
+
+  .social {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Большие девайсы (десктопы, >= 992px) */
+@media (min-width: 992px) {
+  .pages-wrap {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 180px 15px;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .header {
+    padding: 32px 75px;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding-left: 75px;
+    padding-right: 75px;
+    max-width: 100%;
+  }
+
+  .menu__list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    padding-left: 0;
+    line-height: 52px;
+  }
+
+  .menu-scroll {
+    background-color: rgb(15, 15, 15, 0.75);
+    -webkit-box-shadow: 0px 5px 15px -10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 5px 15px -10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 5px 15px -10px rgba(0, 0, 0, 0.6);
+  }
+
+  .menu__item:hover {
+    color: #AC3CD4;
+  }
+
+  .content {
+    margin-top: 25vh;
+  }
+
+  .skills-item {
+    width: 33.333%;
+  }
+
+  .menu__toggle {
+    display: none;
+  }
+
+  .portfolio-img {
+    width: 30%;
+  }
+
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+@media (min-width: 1200px) {
+  .skills-item {
+    width: 25%;
+  }
+
+  .content__title {
+    font-size: 72px;
+  }
+
+  .content__desc {
+    font-size: 24px;
+  }
+}
